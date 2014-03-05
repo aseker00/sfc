@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\fwk">
+      <UniqueIdentifier>{41ec2cbb-9210-4dee-a410-c857388a4fa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\fwk">
+      <UniqueIdentifier>{bdcb82a8-7bca-4b20-9427-60072a2c89b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\dsa">
+      <UniqueIdentifier>{48addef5-4859-46b4-b604-b2cb76bd75d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\dsa">
+      <UniqueIdentifier>{777fa39b-2b70-4723-916b-cda34d9e426c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkActivity.h">
+      <Filter>Header Files\fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkAgent.h">
+      <Filter>Header Files\fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkAttribute.h">
+      <Filter>Header Files\fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkAttributeId.h">
+      <Filter>Header Files\fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkBaseNotifiee.h">
+      <Filter>Header Files\fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkBasePtrCollection.h">
+      <Filter>Header Files\fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkBasePtrIterator.h">
+      <Filter>Header Files\fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkDirectory.h">
+      <Filter>Header Files\fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkException.h">
+      <Filter>Header Files\fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkName.h">
+      <Filter>Header Files\fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkNamedInterface.h">
+      <Filter>Header Files\fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkNullPointerException.h">
+      <Filter>Header Files\fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkObject.h">
+      <Filter>Header Files\fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkPtr.h">
+      <Filter>Header Files\fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkPtrInterface.h">
+      <Filter>Header Files\fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkRangeException.h">
+      <Filter>Header Files\fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkRefCount.h">
+      <Filter>Header Files\fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkRootNotifiee.h">
+      <Filter>Header Files\fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkString.h">
+      <Filter>Header Files\fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkStringContents.h">
+      <Filter>Header Files\fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkType.h">
+      <Filter>Header Files\fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkValidPtr.h">
+      <Filter>Header Files\fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkVersionException.h">
+      <Filter>Header Files\fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\dsa\dsaArrayBinaryHeap.h">
+      <Filter>Header Files\dsa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\dsa\dsaDoublyLinkedList.h">
+      <Filter>Header Files\dsa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\dsa\dsaLinkedBinarySearchTree.h">
+      <Filter>Header Files\dsa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\dsa\dsaLinkedBinomialHeap.h">
+      <Filter>Header Files\dsa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\dsa\dsaLinkedFibonacciHeap.h">
+      <Filter>Header Files\dsa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\dsa\dsaLinkedHashTable.h">
+      <Filter>Header Files\dsa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\dsa\dsaLinkedList.h">
+      <Filter>Header Files\dsa</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\src\fwk\fwkName.cpp">
+      <Filter>Source Files\fwk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\dsa\dsaLinkedQueue.cpp">
+      <Filter>Source Files\dsa</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

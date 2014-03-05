@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2FCA6162-65D4-447A-8F16-1AB07B6D1093}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>sfc</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\src\dsa\dsaArrayBinaryHeap.h" />
+    <ClInclude Include="..\..\..\..\..\src\dsa\dsaDoublyLinkedList.h" />
+    <ClInclude Include="..\..\..\..\..\src\dsa\dsaLinkedBinarySearchTree.h" />
+    <ClInclude Include="..\..\..\..\..\src\dsa\dsaLinkedBinomialHeap.h" />
+    <ClInclude Include="..\..\..\..\..\src\dsa\dsaLinkedFibonacciHeap.h" />
+    <ClInclude Include="..\..\..\..\..\src\dsa\dsaLinkedHashTable.h" />
+    <ClInclude Include="..\..\..\..\..\src\dsa\dsaLinkedList.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkActivity.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkAgent.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkAttribute.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkAttributeId.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkBaseNotifiee.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkBasePtrCollection.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkBasePtrIterator.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkDirectory.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkException.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkName.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkNamedInterface.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkNullPointerException.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkObject.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkPtr.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkPtrInterface.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkRangeException.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkRefCount.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkRootNotifiee.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkString.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkStringContents.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkType.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkValidPtr.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\fwkVersionException.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\src\dsa\dsaLinkedQueue.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\fwk\fwkName.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
