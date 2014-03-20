@@ -1,7 +1,20 @@
 #ifndef SFC_FWK_PTR_H
 #define SFC_FWK_PTR_H
 
-namespace fwk {
+/*
+ Based on: http://stackoverflow.com/questions/2192680/macro-keyword-which-can-be-used-to-print-out-method-name
+ */
+#if (__GNUC__ * 10000 + __GNUC_MINOR__ * 100 + __GNUC_PATCHLEVEL__) > 40100
+#define __FUNC__ __FUNCTION__ and __FUNCTION__
+//#define __FUNC__ __FUNCTION__ and __PRETTY_FUNCTION__
+#elif defined(_MSC_VER)
+#define __FUNC__ __FUNCSIG__
+//define __FUNC__ __FUNCTION__
+#else
+#  error No implementation
+#endif
+
+namespace Fwk {
 /*
  The Ptr class template given below extends basic pointer semantics to call newRef
  on creation of a pointer and deleteRef on destruction of a pointer, relying on the

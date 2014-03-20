@@ -1,10 +1,11 @@
 #ifndef SFC_FWK_NAMED_INTERFACE_H
 #define SFC_FWK_NAMED_INTERFACE_H
 
-#include "fwkPtrInterface.h"
-#include "fwkName.h"
+#include "FwkPtrInterface.h"
+#include "FwkName.h"
+#include "FwkType.h"
 
-namespace fwk
+namespace Fwk
 {
 /*
 An object of public interface type T in namespace Ns is implemented by object module, 
@@ -31,9 +32,10 @@ interface class is derived from the framework base class:
 class NamedInterface : public PtrInterface<NamedInterface> 
 {
 public:
-	typedef fwk::Ptr<NamedInterface const> PtrConst;
-	typedef fwk::Ptr<NamedInterface> Ptr;
+	typedef Fwk::Ptr<NamedInterface const> PtrConst;
+	typedef Fwk::Ptr<NamedInterface> Ptr;
 	Name name() const;
+	virtual Type::PtrConst type() const = 0;
 
 	/*
 	Continuing our example, PortDir is derived from NamedInterface so overrides the

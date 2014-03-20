@@ -1,7 +1,7 @@
 #ifndef SFC_FWK_ATTRIBUTE_ID_H
 #define SFC_FWK_ATTRIBUTE_ID_H
 
-namespace fwk {
+namespace Fwk {
 class AttributeId {
 public:
 	AttributeId(unsigned value);

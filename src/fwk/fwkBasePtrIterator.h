@@ -1,9 +1,9 @@
 #ifndef SFC_FWK_BASE_PTR_ITERATOR_H
 #define SFC_FWK_BASE_PTR_ITERATOR_H
 
-#include "fwkPtr.h"
+#include "FwkPtr.h"
 
-namespace fwk
+namespace Fwk
 {
 class BasePtrCollection;
 

@@ -1,10 +1,14 @@
-#pragma once
-#include "../fwk/fwkBasePtrCollection.h"
+#ifndef SFC_CLC_ARRAY_BINARY_HEAP_H
+#define SFC_CLC_ARRAY_BINARY_HEAP_H
 
-namespace dsa
+#include "../fwk/FwkBasePtrCollection.h"
+
+namespace Clc
 {
+
+// Non invasive collection
 template <class T>
-class ArrayBinaryHeap : public fwk::BasePtrCollection
+class ArrayBinaryHeap : public Fwk::BasePtrCollection
 {
 public:
 	ArrayBinaryHeap(unsigned int length) : length_(length) data_(0) { data_ = new typename T::Ptr[length_]; }
@@ -119,3 +123,5 @@ private:
 	unsigned int length_;
 };
 }
+
+#endif

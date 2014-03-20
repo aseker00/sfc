@@ -1,9 +1,9 @@
 #ifndef SFC_FWK_RANGE_EXCEPTION_H
 #define SFC_FWK_RANGE_EXCEPTION_H
 
-#include "fwkException.h"
+#include "FwkException.h"
 
-namespace fwk
+namespace Fwk
 {
 class RangeException : public Exception
 {

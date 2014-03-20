@@ -1,15 +1,17 @@
-#pragma once
-#include "../fwk/fwkBasePtrCollection.h"
-#include "../fwk/fwkBasePtrIterator.h"
+#ifndef SFC_CLC_LINKED_BINARY_SEARCH_TREE_H
+#define SFC_CLC_LINKED_BINARY_SEARCH_TREE_H
 
-namespace dsa
+#include "../fwk/FwkBasePtrCollection.h"
+#include "../fwk/FwkBasePtrIterator.h"
+
+namespace Clc
 {
 template <class T>
-class LinkedBinarySearchTree : public fwk::BasePtrCollection
+class LinkedBinarySearchTree : public Fwk::BasePtrCollection
 {
 public:
 	template<class TT>
-	class LinkedBinarySearchTreeIteratorConst : public fwk::BasePtrIterator<TT>
+	class LinkedBinarySearchTreeIteratorConst : public Fwk::BasePtrIterator<TT>
 	{
 	public:
 		LinkedBinarySearchTree<T> *tree() const { return static_cast<LinkedBinarySearchTree<T> *>(collection_); }
@@ -200,3 +202,5 @@ private:
 	typename T::Ptr root_;
 };
 }
+
+#endif

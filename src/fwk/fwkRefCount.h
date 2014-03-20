@@ -1,7 +1,7 @@
 #ifndef SFC_FWK_REF_COUNT_H
 #define SFC_FWK_REF_COUNT_H
 
-namespace fwk {
+namespace Fwk {
 /*
  Can provide atomic increment and decrement and protection against simultaneous update
  to support concurrency execution environment

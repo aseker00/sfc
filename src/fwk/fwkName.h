@@ -1,9 +1,10 @@
 #ifndef SFC_FWK_NAME_H
 #define SFC_FWK_NAME_H
+#include <string.h>
 
-#include "fwkString.h"
+#include "FwkString.h"
 
-namespace fwk {
+namespace Fwk {
 class Name {
 public:
 	Name(String value);

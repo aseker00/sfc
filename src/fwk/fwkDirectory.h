@@ -1,9 +1,9 @@
 #ifndef SFC_FWK_DIRECTORY_H
 #define SFC_FWK_DIRECTORY_H
 
-#include "fwkNamedInterface.h"
+#include "FwkNamedInterface.h"
 
-namespace fwk
+namespace Fwk
 {
 /*
 Framework Directory interface, supporting the lookup of an instance of type T by name, 

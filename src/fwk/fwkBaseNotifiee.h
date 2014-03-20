@@ -1,9 +1,9 @@
 #ifndef SFC_FWK_BASE_NOTIFIEE_H
 #define SFC_FWK_BASE_NOTIFIEE_H
 
-#include "fwkRootNotifiee.h"
+#include "FwkRootNotifiee.h"
 
-namespace fwk
+namespace Fwk
 {
 /*
 Used to define some common attributes and mechanisms for all notifiee classes

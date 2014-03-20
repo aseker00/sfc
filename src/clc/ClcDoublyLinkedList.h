@@ -1,24 +1,26 @@
-#pragma once
-#include "../fwk/fwkBasePtrCollection.h"
-#include "../fwk/fwkBasePtrIterator.h"
+#ifndef SFC_CLC_DOUBLY_LINKED_LIST_H
+#define SFC_CLC_DOUBLY_LINKED_LIST_H
 
-namespace dsa
+#include "../fwk/FwkBasePtrCollection.h"
+#include "../fwk/FwkBasePtrIterator.h"
+
+namespace Clc
 {
 template<class T>
-class DoublyLinkedList : public fwk::BasePtrCollection
+class DoublyLinkedList : public Fwk::BasePtrCollection
 {
 	template<class TT>
-	class DoublyLinkedListIteratorConst : public fwk::BasePtrIterator<TT>
+	class DoublyLinkedListIteratorConst : public Fwk::BasePtrIterator<TT>
 	{
 	public:
-		DoublyLinkedList<T> *list() const { return static_cast<DoubleLinkedList<T> *>(collection_); }
+		DoublyLinkedList<T> *list() const { return static_cast<DoublyLinkedList<T> *>(collection_); }
 		DoublyLinkedListIteratorConst &operator++()
 		{ 
 			TT *current = ptr();
 			ptrIs(current->doublyLinkedListNext());
 			return *this;
 		}
-		LinkedListIteratorConst operator++(int)
+		DoublyLinkedListIteratorConst operator++(int)
 		{
 			DoublyLinkedListIteratorConst tmp(*this);
 			++*this;
@@ -98,7 +100,7 @@ class DoublyLinkedList : public fwk::BasePtrCollection
 			}
 			else 
 			{
-				newMember->doublyinkedListNextIs(list()->head_);
+				newMember->doublyLinkedListNextIs(list()->head_);
 				if (list()->head_)
 					list()->head_->doublyLinkedListPreviousIs(newMember);
 				list()->head_ = newMember;
@@ -114,12 +116,12 @@ class DoublyLinkedList : public fwk::BasePtrCollection
 			if(savedVersion_ != list()->version_)
 				throw VersionException("list");
 			TT *current = ptr();
-			TT *next = current->linkedListNext();
+			TT *next = current->doublyLinkedListNext();
 			newMember->doublyLinkedListNextIs(next);
 			if (next)
 				next->doublyLinkedListPreviousIs(newMember);
 			current->doublyLinkedListNextIs(newMember);
-			newMember->doubleLinkedListPreviousIs(current);
+			newMember->doublyLinkedListPreviousIs(current);
 			if(!newMember->doublyLinkedListNext()) 
 				tail_ = newMember_;
 			++list()->members_;
@@ -224,7 +226,7 @@ public:
 		{
 			for(typename T::Ptr nextC = c->doublyLinkedListNext(); nextC; c = nextC) 
 			{
-				nextC = c->linkedListNext();
+				nextC = c->doublyLinkedListNext();
 				c->doublyLinkedListNextIs(0);
 				c->doublyLinkedListPreviousIs(0);
 			}
@@ -235,7 +237,7 @@ public:
 	
 	typename T::Ptr member(T *t)
 	{
-		for(T *c = head_.ptr(); c; c = c->doublyLinkedListNext()) 
+		for(T *c = head_.ptr(); c; c = c->doubeyLinkedListNext()) 
 		{
 			if(c == t)
 				return t;
@@ -274,3 +276,5 @@ private:
 	T *tail_;
 };
 }
+
+#endif

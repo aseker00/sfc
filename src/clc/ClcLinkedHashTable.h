@@ -1,16 +1,18 @@
-#pragma once
-#include "../fwk/fwkBasePtrCollection.h"
-#include "../fwk/fwkBasePtrIterator.h"
-#include "../fwk/fwkFactor.h"
+#ifndef SFC_CLC_LINKED_HASH_TABLE_H
+#define SFC_CLC_LINKED_HASH_TABLE_H
 
-namespace dsa
+#include "../fwk/FwkBasePtrCollection.h"
+#include "../fwk/FwkBasePtrIterator.h"
+#include "../fwk/FwkFactor.h"
+
+namespace Clc
 {
 template <class T>
-class LinkedHashTable : public fwk::BasePtrCollection
+class LinkedHashTable : public Fwk::BasePtrCollection
 {
 public:
 	template<class TT>
-	class LinkedHashTableIteratorConst : public fwk::BasePtrIterator<TT>
+	class LinkedHashTableIteratorConst : public Fwk::BasePtrIterator<TT>
 	{
 	public:
 		LinkedHashTable<T> *table() const { return static_cast<LinkedHashTable<T> *>(collection_); }
@@ -181,3 +183,5 @@ private:
 	unsigned int capacity_;
 };
 }
+
+#endif

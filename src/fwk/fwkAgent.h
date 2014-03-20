@@ -1,7 +1,7 @@
 #ifndef SFC_FWK_AGENT_H
 #define SFC_FWK_AGENT_H
 
-namespace fwk
+namespace Fwk
 {
 /*
 An agent is an operating system process that performs some specified processing

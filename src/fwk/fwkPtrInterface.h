@@ -1,10 +1,10 @@
 #ifndef SFC_FWK_PTR_INTERFACE_H
 #define SFC_FWK_PTR_INTERFACE_H
 
-#include "fwkPtr.h"
-#include "fwkRefCount.h"
+#include "FwkPtr.h"
+#include "FwkRefCount.h"
 
-namespace fwk {
+namespace Fwk {
 /*
  Defines a common interface for reference management of objects.
  Using PtrInterface:
@@ -146,10 +146,11 @@ private:
 		delete this;
 	}
 
+	/*
+	 Based on: http://stackoverflow.com/questions/1158374/portable-compare-and-swap-atomic-operations-c-c-library
+	 */
 	bool CAS(volatile unsigned int *ptr, unsigned int newValue, unsigned int oldValue) {
-#if __ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ >= 1050
-		return OSAtomicCompareAndSwapPtr (oldValue, newValue, ptr);
-#elif defined(_MSC_VER)
+#if defined(_MSC_VER)
 		return InterlockedCompareExchange(ptr, newValue, oldValue);
 #elif (__GNUC__ * 10000 + __GNUC_MINOR__ * 100 + __GNUC_PATCHLEVEL__) > 40100
 		return __sync_val_compare_and_swap(ptr, oldValue, newValue);

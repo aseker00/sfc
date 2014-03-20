@@ -1,7 +1,7 @@
 #ifndef SFC_FWK_EXCEPTION_H
 #define SFC_FWK_EXCEPTION_H
 
-namespace fwk
+namespace Fwk
 {
 class Exception
 {

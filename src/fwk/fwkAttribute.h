@@ -1,9 +1,9 @@
 #ifndef SFC_FWK_ATTRIBUTE_H
 #define SFC_FWK_ATTRIBUTE_H
 
-#include "fwkNamedInterface.h"
+#include "FwkNamedInterface.h"
 
-namespace fwk
+namespace Fwk
 {
 /*
 In the general (unstructured) case for C++, complete introspection support means
@@ -14,6 +14,10 @@ these NamedInterface types and their attributes.
 */
 class Attribute : public NamedInterface 
 {
+public:
+	//typedef Fwk::Ptr<Attribute> Ptr;
+	//
+	typedef Fwk::Ptr<const Attribute> PtrConst;
 	//Flags flags() const;
 	Attribute::PtrConst indexAttr() const;
 };

@@ -1,9 +1,9 @@
 #ifndef SFC_FWK_ROOT_NOTIFIEE_H
 #define SFC_FWK_ROOT_NOTIFIEE_H
 
-#include "fwkPtrInterface.h"
+#include "FwkPtrInterface.h"
 
-namespace fwk
+namespace Fwk
 {
 class Activity;
 /*

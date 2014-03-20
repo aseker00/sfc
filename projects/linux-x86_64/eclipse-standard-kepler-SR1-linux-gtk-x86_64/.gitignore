@@ -1,0 +1,11 @@
+RemoteSystemsTempFiles/
+!.metadata/
+
+.metadata/*
+!.metadata/.plugins/
+
+.metadata/.plugins/
+!.metadata/.plugins/org.eclipse.debug.core/
+
+.metadata/.plugins/org.eclipse.debug.core/
+.metadata/.plugins/org.eclipse.debug.core/.launches/

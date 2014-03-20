@@ -1,8 +1,10 @@
-#pragma once
-#include "../fwk/fwkBasePtrCollection.h"
-#include "../fwk/fwkBasePtrIterator.h"
+#ifndef SFC_CLC_LINKED_LIST_H
+#define SFC_CLC_LINKED_LIST_H
 
-namespace dsa
+#include "../fwk/FwkBasePtrCollection.h"
+#include "../fwk/FwkBasePtrIterator.h"
+
+namespace Cls
 {
 /*
 As an invasive collection, LinkedList depends on, and thus requires, any type
@@ -10,7 +12,7 @@ T used as a type parameter to it to support the smart pointer interface and to
 implement the linkedListNext attribute.
 */
 template<class T>
-class LinkedList : public fwk::BasePtrCollection
+class LinkedList : public Fwk::BasePtrCollection
 {
 	/*
 	An iterator is created with optionally a key or selector indicating the initial member
@@ -21,7 +23,7 @@ class LinkedList : public fwk::BasePtrCollection
 	on the iterator.
 	*/
 	template<class TT>
-	class LinkedListIteratorConst : public fwk::BasePtrIterator<TT>
+	class LinkedListIteratorConst : public Fwk::BasePtrIterator<TT>
 	{
 	public:
 		LinkedList<T> *list() const { return static_cast<LinkedList<T> *>(collection_); }
@@ -189,7 +191,7 @@ public:
 	LinkedList() : head_(0), tail_(0) {}
 	T *head() const { return head_.ptr(); }
 	
-	void newHead(typename T::Ptr &newMember)
+	void newHead(const typename T::Ptr &newMember)
 	{
 		if(!head_) 
 			tail_ = newMember.ptr();
@@ -307,3 +309,5 @@ inline mutators.
 //	PacketBuf::Ptr next_;
 //	Port *port_;
 //};
+
+#endif

@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{2FCA6162-65D4-447A-8F16-1AB07B6D1093}</ProjectGuid>
+    <ProjectGuid>{4B3E0A42-2776-48C7-8D2E-F3E548EA8191}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>sfc</RootNamespace>
   </PropertyGroup>
@@ -76,40 +76,41 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\src\dsa\dsaArrayBinaryHeap.h" />
-    <ClInclude Include="..\..\..\..\..\src\dsa\dsaDoublyLinkedList.h" />
-    <ClInclude Include="..\..\..\..\..\src\dsa\dsaLinkedBinarySearchTree.h" />
-    <ClInclude Include="..\..\..\..\..\src\dsa\dsaLinkedBinomialHeap.h" />
-    <ClInclude Include="..\..\..\..\..\src\dsa\dsaLinkedFibonacciHeap.h" />
-    <ClInclude Include="..\..\..\..\..\src\dsa\dsaLinkedHashTable.h" />
-    <ClInclude Include="..\..\..\..\..\src\dsa\dsaLinkedList.h" />
-    <ClInclude Include="..\..\..\..\..\src\fwk\fwkActivity.h" />
-    <ClInclude Include="..\..\..\..\..\src\fwk\fwkAgent.h" />
-    <ClInclude Include="..\..\..\..\..\src\fwk\fwkAttribute.h" />
-    <ClInclude Include="..\..\..\..\..\src\fwk\fwkAttributeId.h" />
-    <ClInclude Include="..\..\..\..\..\src\fwk\fwkBaseNotifiee.h" />
-    <ClInclude Include="..\..\..\..\..\src\fwk\fwkBasePtrCollection.h" />
-    <ClInclude Include="..\..\..\..\..\src\fwk\fwkBasePtrIterator.h" />
-    <ClInclude Include="..\..\..\..\..\src\fwk\fwkDirectory.h" />
-    <ClInclude Include="..\..\..\..\..\src\fwk\fwkException.h" />
-    <ClInclude Include="..\..\..\..\..\src\fwk\fwkName.h" />
-    <ClInclude Include="..\..\..\..\..\src\fwk\fwkNamedInterface.h" />
-    <ClInclude Include="..\..\..\..\..\src\fwk\fwkNullPointerException.h" />
-    <ClInclude Include="..\..\..\..\..\src\fwk\fwkObject.h" />
-    <ClInclude Include="..\..\..\..\..\src\fwk\fwkPtr.h" />
-    <ClInclude Include="..\..\..\..\..\src\fwk\fwkPtrInterface.h" />
-    <ClInclude Include="..\..\..\..\..\src\fwk\fwkRangeException.h" />
-    <ClInclude Include="..\..\..\..\..\src\fwk\fwkRefCount.h" />
-    <ClInclude Include="..\..\..\..\..\src\fwk\fwkRootNotifiee.h" />
-    <ClInclude Include="..\..\..\..\..\src\fwk\fwkString.h" />
-    <ClInclude Include="..\..\..\..\..\src\fwk\fwkStringContents.h" />
-    <ClInclude Include="..\..\..\..\..\src\fwk\fwkType.h" />
-    <ClInclude Include="..\..\..\..\..\src\fwk\fwkValidPtr.h" />
-    <ClInclude Include="..\..\..\..\..\src\fwk\fwkVersionException.h" />
+    <ClInclude Include="..\..\..\..\..\src\clc\ClcArray.h" />
+    <ClInclude Include="..\..\..\..\..\src\clc\ClcArrayBinaryHeap.h" />
+    <ClInclude Include="..\..\..\..\..\src\clc\ClcDoublyLinkedList.h" />
+    <ClInclude Include="..\..\..\..\..\src\clc\ClcLinkedBinarySearchTree.h" />
+    <ClInclude Include="..\..\..\..\..\src\clc\ClcLinkedBinomialHeap.h" />
+    <ClInclude Include="..\..\..\..\..\src\clc\ClcLinkedFibonacciHeap.h" />
+    <ClInclude Include="..\..\..\..\..\src\clc\ClcLinkedHashTable.h" />
+    <ClInclude Include="..\..\..\..\..\src\clc\ClcLinkedList.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\FwkActivity.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\FwkAgent.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\FwkAttribute.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\FwkAttributeId.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\FwkBaseNotifiee.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\FwkBasePtrCollection.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\FwkBasePtrIterator.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\FwkDirectory.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\FwkException.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\FwkFactor.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\FwkName.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\FwkNamedInterface.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\FwkNullPointerException.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\FwkObject.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\FwkPtr.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\FwkPtrInterface.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\FwkRangeException.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\FwkRefCount.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\FwkRootNotifiee.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\FwkString.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\FwkStringContents.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\FwkType.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\FwkValidPtr.h" />
+    <ClInclude Include="..\..\..\..\..\src\fwk\FwkVersionException.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\src\dsa\dsaLinkedQueue.cpp" />
-    <ClCompile Include="..\..\..\..\..\src\fwk\fwkName.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\fwk\FwkName.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

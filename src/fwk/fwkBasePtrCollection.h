@@ -1,7 +1,7 @@
 #ifndef SFC_FWK_BASE_PTR_COLLECTION_H
 #define SFC_FWK_BASE_PTR_COLLECTION_H
 
-namespace fwk
+namespace Fwk
 {
 /*
 	Provide a base type for iterator support with invasive collections.

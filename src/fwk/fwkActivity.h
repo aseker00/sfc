@@ -1,10 +1,10 @@
 #ifndef SFC_FWK+ACTIVITY_H
 #define SFC_FWK_ACTIVITY_H
 
-#include "fwkNamedInterface.h"
-#include "fwkRootNotifiee.h"
+#include "FwkNamedInterface.h"
+#include "FwkRootNotifiee.h"
 
-namespace fwk
+namespace Fwk
 {
 /*
 An object that represents an allocation of processing capacity that

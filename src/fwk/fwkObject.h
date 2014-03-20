@@ -1,9 +1,9 @@
 #ifndef SFC_FWK_OBJECT_H
 #define SFC_FWK_OBJECT_H
 
-#include "fwkPtrInterface.h"
+#include "FwkPtrInterface.h"
 
-namespace fwk
+namespace Fwk
 {
 /*
 Provide a derived type of Object for each object type T, with the derived

@@ -1,9 +1,9 @@
 #ifndef SFC_FWK_VALID_PTR_H
 #define SFC_FWK_VALID_PTR_H
 
-#include "fwkRangeException.h"
+#include "FwkRangeException.h"
 
-namespace fwk
+namespace Fwk
 {
 /*
 It is attractive to have a pointer type that ensures it is a valid instance (as opposed

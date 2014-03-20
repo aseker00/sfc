@@ -1,15 +1,15 @@
-#include "fwkName.h"
-#include "fwkRangeException.h"
+#include "FwkName.h"
+#include "FwkRangeException.h"
 
-namespace fwk {
+namespace Fwk {
 
 Name::Name(String value) {
 	if (value_.isEmpty())
-		throw fwk::RangeException("", "");
+		throw RangeException("value is empty", __FUNC__);
 	if (value_.length() > maxLength())
-		throw fwk::RangeException("", "");
+		throw RangeException("value length over max length > ", __FUNC__);
 	if (value_.charAt(0) < 'A' || value_.charAt(0) > 'Z')
-		throw fwk::RangeException("", "");
+		throw RangeException("first letter not capitalized", __FUNC__);
 	value_ = value;
 }
 

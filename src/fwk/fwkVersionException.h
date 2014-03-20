@@ -1,9 +1,9 @@
 #ifndef SFC_FWK_VERSION_EXCEPTION_H
 #define SFC_FWK_VERSION_EXCPETION_H
 
-#include "fwkException.h"
+#include "FwkException.h"
 
-namespace fwk
+namespace Fwk
 {
 class VersionException : public Exception
 {

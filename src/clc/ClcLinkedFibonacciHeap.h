@@ -1,11 +1,13 @@
-#pragma once
-#include "../fwk/fwkBasePtrCollection.h"
-#include "../fwk/fwkBasePtrIterator.h"
+#ifndef SFC_CLC_LINKED_FIBONACCI_HEAP_H
+#define SFC_CLC_LINKED_FIBONACCI_HEAP_H
 
-namespace dsa
+#include "../fwk/FwkBasePtrCollection.h"
+#include "../fwk/FwkBasePtrIterator.h"
+
+namespace Clc
 {
 template <class T>
-class LinkedFibonnaciHeap : public fwk::BasePtrCollection
+class LinkedFibonnaciHeap : public Fwk::BasePtrCollection
 {
 public:
 	LinkedFibonacciHeap() : head_(0), n_(0), t_(0), m_(0) {}
@@ -106,3 +108,5 @@ private:
 	typename T::Ptr head_;	// min/max pointer
 };
 }
+
+#endif

@@ -1,8 +1,9 @@
 #pragma once
-#include "fwkNamedInterface.h"
-#include "fwkAttribute.h"
+#include "FwkNamedInterface.h"
+#include "FwkAttribute.h"
+#include "FwkBasePtrIterator.h"
 
-namespace fwk
+namespace Fwk
 {
 /*
 Introspection support to allow run-time naming of types.
@@ -18,11 +19,15 @@ This code assumes that the Fwk::Type instance is previously instantiated.
 Alternatively, the type function per NamedInterface type can instantiate the 
 Fwk::Type on its first call.
 */
-class Type : public NamedInterface 
+class Type : public NamedInterface
 {
+public:
+	/*typedef Fwk::Ptr<Type> Ptr;
+	typedef Fwk::Ptr<const Type> PtrConst;*/
 	Type::PtrConst baseType() const;
 	Attribute::PtrConst attribute(String attrName) const;
 	//AttributeIterator attributeIter() const;
-	BasePtrIterator attributeIter() const;
+	BasePtrIterator<Attribute> attributeIter() const;
+	virtual Fwk::Type::PtrConst type() const { return this; }
 };
 }
